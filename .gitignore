@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+src-tauri/target/
+src-tauri/gen/
+output/
+
+# Release artifacts
+release-assets/
+*.msi
+*.exe
+*.AppImage
+*.dmg
+
+# Env / secrets
+.env
+.env.*
+*.key
+*.pem
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+*.log
+
+# WorkBuddy workspace data
+.workbuddy/

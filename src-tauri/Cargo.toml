@@ -1,0 +1,23 @@
+[package]
+name = "aibox"
+version = "1.0.0"
+description = "AIBox - BYOK AI creation desktop app"
+authors = ["AIBox"]
+edition = "2021"
+
+[lib]
+name = "aibox_lib"
+crate-type = ["rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.12", features = ["json", "multipart", "blocking", "stream"] }
+tokio = { version = "1", features = ["full"] }
+base64 = "0.22"
+window-vibrancy = "0.8"
+futures-util = "0.3"
